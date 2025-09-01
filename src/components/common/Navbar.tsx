@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
@@ -16,8 +17,21 @@ export default function Navbar() {
         <Link href="#roadmap" className="text-gray-700 hover:text-blue-600 font-medium">Roadmap</Link>
       </div>
       <div className="flex items-center gap-4">
-        <Link href="/login" className="px-4 py-2 rounded text-gray-700 hover:bg-gray-100 font-medium">Log In</Link>
-        <Link href="/get-started" className="px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700">Get Started</Link>
+        <Link href="/login">
+          <Button
+            variant="outline"
+            className="text-gray-900 font-semibold bg-transparent border-none px-3 py-3 rounded-m shadow-none transition-colors duration-200 hover:bg-[#55b6d2] hover:text-white"
+          >
+            Log In
+          </Button>
+        </Link>
+        <Link href="/get-started">
+            <Button
+              className="font-semibold px-3 py-3 rounded-m bg-gradient-to-r from-[#2b7cff] to-[#55b6d2] text-white shadow-none border-none transition-transform duration-200 hover:scale-105"
+            >
+              Get Started
+            </Button>
+        </Link>
       </div>
     </nav>
   );
