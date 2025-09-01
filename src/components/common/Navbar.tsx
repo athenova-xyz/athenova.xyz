@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="w-full flex items-center justify-between px-8 py-4 bg-white/80 backdrop-blur border-b border-gray-200 fixed top-0 left-0 z-50">
       <Link href="/">
         <span className="flex items-center gap-2">
-          <Image src="/file.svg" alt="Athenova Logo" width={40} height={40} />
+          <Image src="/logo.png" alt="Athenova Logo" width={40} height={40} />
         </span>
       </Link>
       <div className="flex items-center gap-8">
@@ -20,14 +20,14 @@ export default function Navbar() {
         <Link href="/login">
           <Button
             variant="outline"
-            className="text-gray-900 font-semibold bg-transparent border-none px-3 py-3 rounded-m shadow-none transition-colors duration-200 hover:bg-[#55b6d2] hover:text-white"
+            className="text-gray-900 font-semibold bg-transparent border-none px-3 py-3 rounded-m shadow-none transition-colors duration-200 hover:bg-[var(--secondary)] hover:text-white"
           >
             Log In
           </Button>
         </Link>
         <Link href="/get-started">
             <Button
-              className="font-semibold px-3 py-3 rounded-m bg-gradient-to-r from-[#2b7cff] to-[#55b6d2] text-white shadow-none border-none transition-transform duration-200 hover:scale-105"
+              className="font-semibold px-3 py-3 rounded-m bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white shadow-none border-none transition-transform duration-200 hover:scale-105"
             >
               Get Started
             </Button>
