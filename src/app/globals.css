@@ -98,6 +98,17 @@ body {
   0%, 100% { transform: translateY(0);}
   50% { transform: translateY(-20px);}
 }
+@keyframes border-spin {
+  0% { transform: rotate(45deg);}
+  100% { transform: rotate(405deg);}
+}
+.animate-border-spin {
+  animation: border-spin 10s linear infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-20px);}
+}
 .animate-float {
   animation: float 8s ease-in-out infinite;
 }
