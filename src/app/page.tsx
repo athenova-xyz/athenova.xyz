@@ -1,7 +1,5 @@
-import HeroSection from "../components/ui/HeroSection";
+import HeroSection from "../components/hero/HeroSection";
 
 export default function Home() {
-  return (
-    <HeroSection />
-  );
+  return <HeroSection />;
 }
