@@ -84,7 +84,6 @@ export default function LandingHero() {
         <div className="absolute top-[40%] left-[10%] w-4 h-4 rounded-full bg-[var(--landing-dot)]" />
         <div className="absolute bottom-[15%] right-[15%] w-4 h-4 rounded-full bg-[var(--landing-dot)]" />
       </div>
-
       {/* Card grid - matches screenshot */}
       <div className="my-20 max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
