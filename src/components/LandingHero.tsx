@@ -48,7 +48,7 @@ export default function LandingHero() {
       <div className="mt-16 flex justify-center gap-6">
         <button
           type="button"
-          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-lg bg-[var(--background)] text-[var(--card-blue)] font-semibold ring-2 ring-[var(--card-cyan)] hover:shadow-2xl active:translate-y-0.5 transition-all duration-200 hover:bg-[var(--landing-accent)] hover:text-[var(--landing-cta-hover-text)]"
+          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-lg bg-[var(--background)] text-[var(--card-blue)] font-semibold ring-2 ring-[var(--card-cyan)] hover:shadow-2xl active:translate-y-0.5 transition-all duration-200 hover:bg-[var(--landing-accent)] hover:text-[var(--landing-cta-hover-text-secondary)]"
         >
           <span className="w-5 h-5 rounded-full bg-[var(--card-cyan)]/20 flex items-center justify-center">
             <Sparkles className="w-4 h-4 text-[var(--card-blue)]" />
@@ -59,7 +59,7 @@ export default function LandingHero() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-sm bg-[var(--color-blur-bg)] backdrop-blur-md text-[var(--background)] border border-[var(--color-blur-border)] font-medium transition-all duration-200 hover:bg-[var(--landing-cta-hover-deep)] hover:text-[var(--landing-cta-hover-text)]"
+          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-sm bg-[var(--color-blur-bg)] backdrop-blur-md text-[var(--background)] border border-[var(--color-blur-border)] font-medium transition-all duration-200 hover:bg-[var(--landing-cta-hover-deep)] hover:text-[var(--landing-cta-hover-text-secondary)]"
         >
           <span className="w-5 h-5 rounded-full bg-[var(--card-blue)]/10 flex items-center justify-center text-current">
             <svg
