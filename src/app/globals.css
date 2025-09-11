@@ -42,6 +42,12 @@ body {
   --hero-gradient-from: #112650;
   --hero-gradient-via: #1a3c6b;
   --hero-gradient-to: #3ba4c6;
+  /* Landing hero tokens */
+  --landing-text-main: #ffffff;
+  --landing-accent: #32c1e3; /* cyan accent for large words */
+  --landing-accent-2: #239ec3; /* secondary accent */
+  --landing-subtext: rgba(139, 216, 231, 0.9);
+  --landing-dot: rgba(50, 193, 227, 0.3);
   --card-cyan: #19b6e7;
   --card-blue: #19458D;
   --card-teal: #2dd4bf;
