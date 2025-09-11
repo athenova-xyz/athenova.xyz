@@ -48,6 +48,13 @@ body {
   --landing-accent-2: #239ec3; /* secondary accent */
   --landing-subtext: rgba(139, 216, 231, 0.9);
   --landing-dot: rgba(50, 193, 227, 0.3);
+  --landing-cta-hover: #e6fbff;
+  --landing-cta-hover-deep: #07386b; /* deeper blue for strong hover */
+  --landing-cta-hover-text: #ffffff;
+  /* Separate hover text colors so primary (light sky) and secondary (deep blue) have adequate contrast */
+  --landing-cta-hover-text-primary: var(--card-blue);
+  --landing-cta-hover-text-secondary: var(--landing-cta-hover-text);
+  --landing-cta-sky: rgba(50,193,227,0.12);
   --card-cyan: #19b6e7;
   --card-blue: #19458D;
   --card-teal: #2dd4bf;
