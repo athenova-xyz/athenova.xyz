@@ -1,5 +1,6 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Trophy, Laptop, Coins } from "lucide-react";
+import FeatureCard from "./ui/FeatureCard";
 
 export default function CoreFeatures() {
   return (
@@ -21,6 +22,28 @@ export default function CoreFeatures() {
           Powered by blockchain technology, designed for the next generation of
           decentralized education
         </p>
+
+        {/* Feature cards grid (matches screenshot) */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+          <FeatureCard
+            Icon={Coins}
+            title="Decentralized Crowdfunding"
+            description="Creators launch campaigns to raise funds in crypto directly from their community. No middlemen, no opaque processes."
+            footerText="500+ Campaigns"
+          />
+          <FeatureCard
+            Icon={Trophy}
+            title="Tokenized Revenue Share"
+            description="Backers receive unique Investor Share NFTs representing their stake and share of future revenue from course sales."
+            footerText="15% Avg ROI"
+          />
+          <FeatureCard
+            Icon={Laptop}
+            title="Community Governance"
+            description="Backers use their NFT stake to vote on project milestones, ensuring creators are accountable to their community."
+            footerText="95% Participation"
+          />
+        </div>
       </div>
     </section>
   );
