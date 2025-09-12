@@ -64,6 +64,25 @@ body {
   --color-blur-bg-hover: rgba(255,255,255,0.15);
   --color-blur-border: rgba(255,255,255,0.2);
   --color-blur-border-hover: rgba(255,255,255,0.3);
+  
+  /* Core Features section */
+  --core-features-bg: #f8fafc;
+  --core-features-badge-bg: rgba(219, 234, 254, 1);
+  /* Use the shared card blue token so badge and title match exactly */
+  --core-features-badge-text: var(--card-blue);
+  --core-features-title: var(--card-blue);
+  --core-features-subtitle: #64748b;
+  /* Gradient used for large headings to match screenshot */
+  --core-features-gradient-from: #1646d9; /* deep blue */
+  --core-features-gradient-to: #2aa3ff; /* sky blue */
+}
+
+/* Utility for gradient text (used by CoreFeatures) */
+.text-core-gradient {
+  background-image: linear-gradient(90deg, var(--core-features-gradient-from), var(--core-features-gradient-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .dark {
