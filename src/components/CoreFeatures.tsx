@@ -22,7 +22,6 @@ export default function CoreFeatures() {
           Powered by blockchain technology, designed for the next generation of
           decentralized education
         </p>
-
         {/* Feature cards grid (matches screenshot) */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
           <FeatureCard
