@@ -72,9 +72,16 @@ body {
   --core-features-badge-text: var(--card-blue);
   --core-features-title: var(--card-blue);
   --core-features-subtitle: #64748b;
-  /* Gradient used for large headings to match screenshot */
+  /* Gradient used for large headings to match */
   --core-features-gradient-from: #1646d9; /* deep blue */
   --core-features-gradient-to: #2aa3ff; /* sky blue */
+  
+  /* How It Works section tokens */
+  --how-bg: #f7fbfc; /* matches core-features background tone */
+  --how-title-from: #1e63d6; /* deep blue */
+  --how-title-to: #2aa3ff; /* sky blue */
+  --how-subtitle: #6b7280; /* muted foreground */
+  --how-blob-accent: rgba(38, 198, 242, 0.12); /* cyan soft blob */
 }
 
 /* Utility for gradient text (used by CoreFeatures) */
@@ -83,6 +90,22 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Utility classes matching conventions */
+.bg-gradient-primary {
+  background-image: linear-gradient(90deg, var(--core-features-gradient-from), var(--core-features-gradient-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-muted-foreground {
+  color: var(--core-features-subtitle);
+}
+
+.font-space {
+  letter-spacing: -0.02em;
 }
 
 .dark {
@@ -150,5 +173,55 @@ body {
 }
 .animate-pulse-glow {
   animation: pulse-glow 5s ease-in-out infinite;
+}
+
+/* How It Works section */
+.how-it-works-section {
+  padding-top: 8rem; /* py-32 */
+  padding-bottom: 8rem;
+  background-color: var(--how-bg);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-inter);
+}
+
+/* decorative blobs */
+.how-it-works-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.how-it-works-blob {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background: var(--how-blob-accent);
+  filter: blur(18px);
+}
+.how-it-works-blob-1 { top: 12%; left: 20%; }
+.how-it-works-blob-2 { top: 20%; right: 18%; width: 4rem; height: 4rem; }
+.how-it-works-blob-3 { bottom: 18%; left: 30%; width: 2.5rem; height: 2.5rem; }
+
+.how-it-works-title {
+  font-size: 3.75rem; /* text-5xl */
+  /* larger on md */
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  /* use the same gradient as Core Features to match */
+  background-image: linear-gradient(90deg, var(--core-features-gradient-from), var(--core-features-gradient-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.how-it-works-subtitle {
+  font-size: 1.125rem; /* text-xl */
+  color: var(--how-subtitle);
+  max-width: 56rem; /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
