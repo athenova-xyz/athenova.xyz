@@ -82,6 +82,14 @@ body {
   --how-title-to: #2aa3ff; /* sky blue */
   --how-subtitle: #6b7280; /* muted foreground */
   --how-blob-accent: rgba(38, 198, 242, 0.12); /* cyan soft blob */
+
+  /* How It Works cards */
+  --hw-card-bg: #ffffff;
+  --hw-card-border: rgba(15,23,42,0.04);
+  --hw-card-radius: 0.75rem;
+  --hw-card-shadow: 0 4px 12px rgba(2,6,23,0.04);
+  --hw-icon-bg: rgba(50,193,227,0.08);
+  --hw-metric-color: var(--card-cyan);
 }
 
 /* Utility for gradient text (used by CoreFeatures) */
@@ -102,6 +110,11 @@ body {
 
 .text-muted-foreground {
   color: var(--core-features-subtitle);
+}
+
+/* small utility for cyan metric text used in How It Works cards */
+.text-brand-cyan {
+  color: var(--hw-metric-color);
 }
 
 .font-space {
@@ -232,5 +245,79 @@ body {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+}
+
+/* How It Works cards */
+.hw-card {
+  background: var(--hw-card-bg);
+  border: 1px solid var(--hw-card-border);
+  border-radius: var(--hw-card-radius);
+  box-shadow: var(--hw-card-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  align-items: stretch;
+}
+.hw-card-inner {
+  width: 100%;
+  padding-top: 3.5rem; /* more space above icon */
+  padding-bottom: 1rem; /* reduce bottom space */
+}
+.hw-card--featured {
+  min-height: 360px; /* make featured card taller */
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04), 0 0 40px rgba(38,198,242,0.06); /* shadow-glow */
+  background: linear-gradient(180deg, rgba(50,193,227,0.05), var(--hw-card-bg));
+  border-color: rgba(50,193,242,0.3); /* border-brand-cyan/50 */
+}
+.hw-card--featured .hw-icon-wrap { background: rgba(50,193,242,0.08); }
+.hw-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.12);
+  border-color: rgba(33,150,243,0.24); /* deeper hover color */
+}
+
+/* Alt variant for 2nd & 3rd cards */
+.hw-card--alt:hover {
+  border-color: rgba(33,150,243,0.30); /* blue/30 */
+  box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+  transform: translateY(-10px);
+}
+.hw-icon-wrap--alt { background: rgba(42,110,234,0.06); }
+
+.hw-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+  stroke: var(--card-blue);
+}
+.hw-icon-svg {
+  width: 48px;
+  height: 48px;
+  color: var(--card-blue2);
+}
+.hw-icon-wrap {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--hw-icon-bg);
+}
+
+/* Increase vertical spacing above and below the three cards */
+.how-it-works-cards { margin-top: 3.5rem; margin-bottom: 3rem; }
+
+/* Ensure featured card still has stronger border on hover */
+.hw-card--featured:hover { border-color: rgba(33,150,243,0.36); }
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .how-it-works-cards { margin-top: 2rem; }
+  .hw-card-inner { padding: 2rem; }
+  .hw-card-title { font-size: 1.25rem; }
+  .hw-card-desc { font-size: 0.95rem; }
 }
 
