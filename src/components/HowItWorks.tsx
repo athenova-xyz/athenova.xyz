@@ -1,4 +1,5 @@
 import React from "react";
+import HowItWorksCards from "./ui/HowItWorksCards";
 
 export default function HowItWorks() {
   return (
@@ -20,6 +21,7 @@ export default function HowItWorks() {
           </p>
         </div>
       </div>
+      <HowItWorksCards />
     </section>
   );
 }
