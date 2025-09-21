@@ -5,10 +5,17 @@ import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-4 bg-white/80 backdrop-blur border-b border-gray-200 fixed top-0 left-0 z-50">
+    <nav className="w-full flex items-center justify-between px-8 py-4 bg-white backdrop-blur border-b border-gray-200 fixed top-0 left-0 z-50">
       <Link href="/">
         <span className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Athenova Logo" width={40} height={40} />
+          <Image
+            src="/Logo.png"
+            alt="Athenova Logo"
+            width={32}
+            height={32}
+            className="w-12 h-12 mx-auto"
+            priority
+          />
         </span>
       </Link>
       <div className="flex items-center gap-8">
@@ -26,11 +33,11 @@ export default function Navbar() {
           </Button>
         </Link>
         <Link href="/get-started">
-            <Button
-              className="font-semibold px-3 py-3 rounded-m bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white shadow-none border-none transition-transform duration-200 hover:scale-105"
-            >
-              Get Started
-            </Button>
+          <Button
+            className="font-semibold px-3 py-3 rounded-m bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white shadow-none border-none transition-transform duration-200 hover:scale-105"
+          >
+            Get Started
+          </Button>
         </Link>
       </div>
     </nav>
