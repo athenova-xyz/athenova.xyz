@@ -33,7 +33,14 @@ export default function Footer() {
     <footer className="bg-muted text-muted-foreground pt-16 pb-12">
       <div className="container mx-auto flex flex-wrap justify-between items-start px-6 gap-8">
         <div className="basis-full md:basis-1/3 mb-8 md:mb-0">
-          <Image src="/logo.png" alt="Logo" width={44} height={44} className="mb-6" />
+          <Image
+            src="/Logo.png"
+            alt="Athenova Logo"
+            width={32}
+            height={32}
+            className="w-18 h-18"
+            priority
+          />
           <p className="mb-8 leading-relaxed">
             Athenova is revolutionizing education through <br /> decentralized crowdfunding, tokenized ownership, and <br /> community governance. Join us in building the future of <br /> learning.
           </p>
