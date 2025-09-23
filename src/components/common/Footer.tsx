@@ -33,14 +33,12 @@ export default function Footer() {
     <footer className="bg-muted text-muted-foreground pt-16 pb-12">
       <div className="container mx-auto flex flex-wrap justify-between items-start px-6 gap-8">
         <div className="basis-full md:basis-1/3 mb-8 md:mb-0">
-          <Image
-            src="/Logo.png"
-            alt="Athenova Logo"
-            width={32}
-            height={32}
-            className="w-18 h-18"
-            priority
-          />
+          <span
+          className="text-3xl font-bold tracking-tight"
+          style={{ fontFamily: 'var(--font-pacifico), cursive' }}
+        >
+          Athenova
+        </span>
           <p className="mb-8 leading-relaxed">
             Athenova is revolutionizing education through <br /> decentralized crowdfunding, tokenized ownership, and <br /> community governance. Join us in building the future of <br /> learning.
           </p>
@@ -78,7 +76,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto flex flex-wrap justify-between items-center border-t mt-14 pt-8 px-6">
-        <span className="py-2">© 2024 Athenova. All rights reserved.</span>
+        <span className="py-2">© 2025 Athenova. All rights reserved.</span>
         <ul className="flex gap-10 list-none p-0 m-0">
           {policyLinks.map((link) => (
             <li key={link.label}>
