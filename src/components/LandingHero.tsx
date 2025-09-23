@@ -6,19 +6,6 @@ import LandingHeroCard from "./ui/LandingHeroCard";
 export default function LandingHero() {
   return (
     <section className="relative py-12 bg-gradient-to-br from-[var(--hero-gradient-from)] via-[var(--hero-gradient-via)] to-[var(--hero-gradient-to)]">
-      {/* Logo */}
-      <div className="mb-10 flex justify-center">
-        {/* Replace the src below with the path to your logo file */}
-        <Image
-          src="/Logo.png"
-          alt="Athenova Logo"
-          width={128}
-          height={128}
-          className="w-32 h-32 mx-auto"
-          priority
-        />
-      </div>
-
       {/* Headline */}
       <h1 className="font-extrabold text-center leading-tight">
         <span className="block text-7xl md:text-8xl text-[var(--landing-text-main)]">

@@ -1,21 +1,15 @@
-import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
     <nav className="w-full flex items-center justify-between px-8 py-4 bg-white backdrop-blur border-b border-gray-200 fixed top-0 left-0 z-50">
       <Link href="/">
-        <span className="flex items-center gap-2">
-          <Image
-            src="/Logo.png"
-            alt="Athenova Logo"
-            width={32}
-            height={32}
-            className="w-12 h-12 mx-auto"
-            priority
-          />
+        <span
+          className="text-3xl font-bold tracking-tight bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent select-none"
+          style={{ fontFamily: 'var(--font-pacifico), cursive' }}
+        >
+          Athenova
         </span>
       </Link>
       <div className="flex items-center gap-8">
