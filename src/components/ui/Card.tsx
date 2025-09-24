@@ -47,7 +47,7 @@ export default function Card() {
 		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-10 px-2">
 			{CARD_DATA.map((card, idx) => (
 				<div className="group" key={idx}>
-					<div className="bg-[var(--color-blur-bg)] backdrop-blur-md rounded-2xl p-6 border border-[var(--color-blur-border)] hover:bg-[var(--color-blur-bg-hover)] transition-all duration-300 transform hover:scale-105 relative overflow-hidden flex flex-col items-center">
+					<div className="backdrop-blur-md rounded-2xl p-6 border border-[var(--color-blur-border)] hover:bg-[var(--color-blur-bg-hover)] transition-all duration-300 transform hover:scale-105 relative overflow-hidden flex flex-col items-center">
 						<div
 							className="absolute top-0 left-0 w-full h-1"
 							style={{
@@ -64,13 +64,13 @@ export default function Card() {
 								{getIcon(card.icon)}
 							</div>
 						</div>
-						<div className="text-3xl md:text-4xl font-bold text-[var(--background)] mb-2 font-space text-center">
+						<div className="text-3xl md:text-4xl font-bold mb-2 font-space text-center">
 							{card.value}
 						</div>
-						<div className="text-[var(--card-cyan)] font-medium mb-2 text-center">
+						<div className="font-medium mb-2 text-center">
 							{card.title}
 						</div>
-						<div className="text-[var(--background)]/60 text-sm text-center">
+						<div className="text-sm text-center">
 							{card.subtitle}
 						</div>
 					</div>
