@@ -1,5 +1,5 @@
 import React from "react";
-import HowItWorksCards from "./ui/HowItWorksCards";
+import HowItWorksCards from "@/components/ui/HowItWorksCards";
 
 export default function HowItWorks() {
   return (

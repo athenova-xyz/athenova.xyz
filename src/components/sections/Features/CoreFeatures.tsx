@@ -8,7 +8,7 @@ import {
   Edit3,
   Shield,
 } from "lucide-react";
-import FeatureCard from "./ui/FeatureCard";
+import FeatureCard from "@/components/ui/FeatureCard";
 
 export default function CoreFeatures() {
   return (

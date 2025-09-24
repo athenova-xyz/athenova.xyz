@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Sparkles, ArrowRight } from "lucide-react";
-import LandingHeroCard from "./ui/LandingHeroCard";
+import LandingHeroCard from "@/components/ui/LandingHeroCard";
 
 export default function LandingHero() {
   return (
