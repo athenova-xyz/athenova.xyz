@@ -1,6 +1,6 @@
 import React from "react";
 import { Sparkles, Globe } from "lucide-react";
-import Card from "../ui/Card";
+import Card from "@/components/ui/Card";
 
 export default function HeroSection() {
   return (

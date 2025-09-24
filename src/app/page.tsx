@@ -1,8 +1,7 @@
-import LandingHero from "@/components/LandingHero";
-import CoreFeatures from "@/components/CoreFeatures";
-import HeroSection from "../components/hero/HeroSection";
-import HowItWorks from "@/components/HowItWorks";
-
+import HeroSection from "@/components/sections/Hero/HeroSection";
+import LandingHero from "@/components/sections/Footer/LandingHero";
+import HowItWorks from "@/components/sections/Workflow/HowItWorks";
+import CoreFeatures from "@/components/sections/Features/CoreFeatures";
 export default function Home() {
   return (
     <>
