@@ -1,19 +1,32 @@
-import LandingHeroCard from "@/components/ui/LandingHeroCard";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import React from "react";
+import Image from "next/image";
+import { Sparkles, ArrowRight } from "lucide-react";
+import LandingHeroCard from "./ui/LandingHeroCard";
 
 export default function LandingHero() {
   return (
-    <section className="relative py-12 bg-gradient-to-br from-primary to-background">
+    <section className="relative py-12 bg-gradient-to-br from-primary via-background to-secondary">
+      {/* Logo */}
+      <div className="mb-10 flex justify-center">
+        <Image
+          src="/Logo.png"
+          alt="Athenova Logo"
+          width={128}
+          height={128}
+          className="w-32 h-32 mx-auto"
+          priority
+        />
+      </div>
+
       {/* Headline */}
       <h1 className="font-extrabold text-center leading-tight">
-        <span className="block text-7xl md:text-8xl">
+        <span className="block text-7xl md:text-8xl text-[var(--landing-text-main)]">
           Decentralize
         </span>
-        <span className="block text-6xl md:text-7xl">
+        <span className="block text-6xl md:text-7xl text-[var(--landing-accent)]">
           Knowledge
         </span>
-        <span className="block text-5xl md:text-6xl">
+        <span className="block text-5xl md:text-6xl text-[var(--landing-accent)]">
           Empower Creators
         </span>
       </h1>
@@ -30,16 +43,23 @@ export default function LandingHero() {
         learners access premium content through Web3
       </p>
 
+      {/* CTA Buttons (matches screenshot) */}
       <div className="mt-16 flex justify-center gap-6">
-        <Button>
+        <button
+          type="button"
+          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-lg bg-[var(--background)] text-[var(--card-blue)] font-semibold ring-2 ring-[var(--card-cyan)] hover:shadow-2xl active:translate-y-0.5 transition-all duration-200 hover:bg-[var(--landing-accent)] hover:text-[var(--landing-cta-hover-text-secondary)]"
+        >
           <span className="w-5 h-5 rounded-full bg-[var(--card-cyan)]/20 flex items-center justify-center">
-            <Sparkles />
+            <Sparkles className="w-4 h-4 text-[var(--card-blue)]" />
           </span>
           <span>Launch Your Course</span>
-          <ArrowRight/>
-        </Button>
+          <ArrowRight className="w-4 h-4 text-[var(--card-blue)]" />
+        </button>
 
-        <Button>
+        <button
+          type="button"
+          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-sm bg-[var(--color-blur-bg)] backdrop-blur-md text-[var(--background)] border border-[var(--color-blur-border)] font-medium transition-all duration-200 hover:bg-[var(--landing-cta-hover-deep)] hover:text-[var(--landing-cta-hover-text-secondary)]"
+        >
           <span className="w-5 h-5 rounded-full bg-[var(--card-blue)]/10 flex items-center justify-center text-current">
             <svg
               className="w-4 h-4 opacity-70"
@@ -55,12 +75,15 @@ export default function LandingHero() {
             </svg>
           </span>
           Explore Courses
-        </Button>
+        </button>
       </div>
+
+      {/* Decorative dots (non-interactive) */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[40%] left-[10%] w-4 h-4 rounded-full bg-[var(--landing-dot)]" />
         <div className="absolute bottom-[15%] right-[15%] w-4 h-4 rounded-full bg-[var(--landing-dot)]" />
       </div>
+      {/* Card grid - matches screenshot */}
       <div className="my-20 max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <LandingHeroCard
