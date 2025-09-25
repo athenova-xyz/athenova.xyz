@@ -1,5 +1,5 @@
-import HeroSection from "@/components/sections/Hero/HeroSection";
-import LandingHero from "@/components/sections/Footer/LandingHero";
+import ReadyToTransform from "@/components/sections/ReadyToTransform/ReadyToTransform";
+import LandingHero from "@/components/sections/Hero/LandingHero";
 import HowItWorks from "@/components/sections/Workflow/HowItWorks";
 import CoreFeatures from "@/components/sections/Features/CoreFeatures";
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       <LandingHero />
       <CoreFeatures />
       <HowItWorks />
-      <HeroSection />
+      <ReadyToTransform />
     </>
   );
 }
