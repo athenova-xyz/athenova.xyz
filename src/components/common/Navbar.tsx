@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-4 bg-white backdrop-blur border-b border-gray-200 fixed top-0 left-0 z-50">
+    <nav className="w-full flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur border-b border-gray-200 fixed top-0 left-0 z-50 fixed">
       <Link href="/">
         <span
           className="text-3xl font-bold tracking-tight"
