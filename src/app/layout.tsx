@@ -43,7 +43,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${pacifico.variable} font-sans antialiased`}
       >
         <Navbar />
-        <div style={{ paddingTop: "80px" }}>
+        <div>
           {children}
           <Footer />
         </div>
