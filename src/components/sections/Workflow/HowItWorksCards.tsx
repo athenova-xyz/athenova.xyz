@@ -1,40 +1,27 @@
 import React from "react";
 import { Rocket, Users, GraduationCap } from "lucide-react";
+import { HOW_IT_WORKS_CARDS } from "./text";
 
 type Card = {
   id: string;
-  icon: React.ReactNode;
   title: string;
   description: string;
   metric: string;
+  icon: React.ReactNode;
 };
 
-const cards: Card[] = [
-  {
-    id: "hw-1",
-    icon: <Rocket className="w-8 h-8" />,
-    title: "Creators Launch",
-    description:
-      "Educators create compelling course proposals and launch crowdfunding campaigns.",
-    metric: "500+ Courses Launched",
-  },
-  {
-    id: "hw-2",
-    icon: <Users className="w-8 h-8 text-primary" />,
-    title: "Community Backs",
-    description:
-      "Supporters fund projects they believe in, receiving Investor Share NFTs.",
-    metric: "$2.5M+ Funds Raised",
-  },
-  {
-    id: "hw-3",
-    icon: <GraduationCap className="w-8 h-8"/>,
-    title: "Everyone Learns & Earns",
-    description:
-      "Courses are built collaboratively with shared success for all participants.",
-    metric: "150+ Active Courses",
-  },
-];
+const cards: Card[] = HOW_IT_WORKS_CARDS.map((card) => ({
+  ...card,
+  icon: (
+    card.id === "hw-1" ? (
+      <Rocket className="w-8 h-8" />
+    ) : card.id === "hw-2" ? (
+      <Users className="w-8 h-8 text-primary" />
+    ) : (
+      <GraduationCap className="w-8 h-8" />
+    )
+  ),
+}));
 
 export default function HowItWorksCards() {
   return (
