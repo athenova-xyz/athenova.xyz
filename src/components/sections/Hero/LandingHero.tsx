@@ -8,27 +8,27 @@ export default function LandingHero() {
       {/* Centered Hero Content */}
       <div className="flex flex-col items-center justify-center w-full h-full flex-1">
         <h1 className="font-extrabold text-center leading-tight">
-          <span className="block text-7xl md:text-8xl">
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
             Decentralize
           </span>
-          <span className="block text-6xl md:text-7xl">
+          <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
             Knowledge
           </span>
-          <span className="block text-5xl md:text-6xl">
+          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             Empower Creators
           </span>
         </h1>
         {/* Subheadline */}
-        <p className="text-lg md:text-2xl text-[var(--landing-text-main)] mt-8 font-semibold text-center">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[var(--landing-text-main)] mt-8 font-semibold text-center">
           The first <span className="">DeFi-native</span> launchpad for
           educational courses
         </p>
         {/* Description */}
-        <p className="text-base md:text-lg text-[var(--landing-accent-2)] mt-6 text-center max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg text-[var(--landing-accent-2)] mt-6 text-center max-w-2xl mx-auto">
           Where educators fund their vision, backers become co-owners, and
           learners access premium content through Web3
         </p>
-        <div className="mt-16 flex justify-center gap-6">
+        <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
           <Button>
             <span className="w-5 h-5 rounded-full bg-[var(--card-cyan)]/20 flex items-center justify-center">
               <Sparkles />
@@ -60,7 +60,7 @@ export default function LandingHero() {
         <div className="absolute top-[40%] left-[10%] w-4 h-4 rounded-full bg-[var(--landing-dot)]" />
         <div className="absolute bottom-[15%] right-[15%] w-4 h-4 rounded-full bg-[var(--landing-dot)]" />
       </div>
-      <div className="my-20 max-w-5xl mx-auto px-4">
+      <div className="my-10 sm:my-20 max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <LandingHeroCard
             variant="creators"
