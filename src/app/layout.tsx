@@ -43,7 +43,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${pacifico.variable} font-sans antialiased`}
       >
         <Navbar />
-        <div>
+        <div style={{ padding: 'var(--athenova-spacing-unit)' }}>
           {children}
           <Footer />
         </div>

@@ -53,6 +53,11 @@ body {
   --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+
+  /* Custom variables */
+  --athenova-primary: oklch(0.6723 0.1606 244.9955); /* Using existing primary color */
+  --athenova-secondary: oklch(0.1884 0.0128 248.5103); /* Using existing secondary color */
+  --athenova-spacing-unit: 1rem; /* A base spacing unit */
 }
 
 .dark {
