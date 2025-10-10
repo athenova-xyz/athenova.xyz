@@ -1,16 +1,19 @@
 import React from "react";
 import HowItWorksCards from "@/components/sections/Workflow/HowItWorksCards";
+import { HOW_IT_WORKS_SECTION_TITLE, HOW_IT_WORKS_SECTION_DESCRIPTION } from "./text";
 
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="relative py-24 bg-gradient-to-b from-white via-slate-50 to-slate-100 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
+
+
           <h2 className="text-4xl md:text-6xl font-extrabold mb-6 text-primary drop-shadow-sm tracking-tight">
-            How It Works
+            {HOW_IT_WORKS_SECTION_TITLE}
           </h2>
           <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A simple, transparent process that puts creators and communities at the center of education.
+            {HOW_IT_WORKS_SECTION_DESCRIPTION}
           </p>
         </div>
         <HowItWorksCards />
