@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
   footerText?: string;
@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function FeatureCard({
-  Icon,
+  icon: IconComponent, // Renamed to avoid conflict and clarify usage
   title,
   description,
   footerText,
@@ -19,7 +19,19 @@ export default function FeatureCard({
       {/* Icon at top */}
       <div className="mb-6">
         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg">
-          <Icon className="h-8 w-8 text-white" />
+          {IconComponent ? (
+            <IconComponent className="h-8 w-8 text-white" />
+          ) : (
+            <svg
+              className="h-8 w-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" strokeWidth="2" />
+            </svg>
+          )}
         </div>
       </div>
 

@@ -33,19 +33,19 @@ export default function CoreFeatures() {
         {/* Feature cards grid */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
           <FeatureCard
-            Icon={Coins}
+            icon={Coins}
             title="Decentralized Crowdfunding"
             description="Creators launch campaigns to raise funds in crypto directly from their community. No middlemen, no opaque processes."
             footerText="500+ Campaigns"
           />
           <FeatureCard
-            Icon={Trophy}
+            icon={Trophy}
             title="Tokenized Revenue Share"
             description="Backers receive unique Investor Share NFTs representing their stake and share of future revenue from course sales."
             footerText="15% Avg ROI"
           />
           <FeatureCard
-            Icon={Laptop}
+            icon={Laptop}
             title="Community Governance"
             description="Backers use their NFT stake to vote on project milestones, ensuring creators are accountable to their community."
             footerText="95% Participation"
@@ -55,19 +55,19 @@ export default function CoreFeatures() {
         {/* Second feature cards grid */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
           <FeatureCard
-            Icon={ShoppingBag}
+            icon={ShoppingBag}
             title="NFT Marketplace"
             description="A dedicated secondary market to trade Investor Share NFTs and Course Access NFTs, providing liquidity for backers."
             footerText="$2.1M Volume"
           />
           <FeatureCard
-            Icon={Edit3}
+            icon={Edit3}
             title="Intuitive Course Editor"
             description="A clean, powerful, Notion-like editor allows creators to build rich, engaging course content with ease."
             footerText="98% Satisfaction"
           />
           <FeatureCard
-            Icon={Shield}
+            icon={Shield}
             title="Token-Gated Access"
             description="Course content is exclusively and verifiably accessible to wallets holding the correct Course Access NFT."
             footerText="100% Secure"
