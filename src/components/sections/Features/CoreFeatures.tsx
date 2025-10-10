@@ -1,14 +1,14 @@
-import React from "react";
+
+import FeatureCard from "@/components/ui/FeatureCard";
 import {
+  Coins,
+  Edit3,
+  Laptop,
+  Shield,
+  ShoppingBag,
   Sparkles,
   Trophy,
-  Laptop,
-  Coins,
-  ShoppingBag,
-  Edit3,
-  Shield,
 } from "lucide-react";
-import FeatureCard from "@/components/ui/FeatureCard";
 
 export default function CoreFeatures() {
   return (
