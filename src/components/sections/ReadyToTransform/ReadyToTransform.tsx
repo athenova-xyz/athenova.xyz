@@ -1,6 +1,6 @@
-import React from "react";
-import { Sparkles, Globe } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
+import { Globe, Sparkles } from "lucide-react";
 
 export default function ReadyToTransform() {
   return (
