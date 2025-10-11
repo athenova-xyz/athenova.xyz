@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Sparkles, ArrowRight } from "lucide-react";
 import LandingHeroCard from "./ui/LandingHeroCard";
+import { Button } from "./ui/button";
 
 export default function LandingHero() {
   return (
@@ -45,20 +46,22 @@ export default function LandingHero() {
 
       {/* CTA Buttons (matches screenshot) */}
       <div className="mt-16 flex justify-center gap-6">
-        <button
+        <Button
           type="button"
-          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-lg bg-[var(--background)] text-[var(--card-blue)] font-semibold ring-2 ring-[var(--card-cyan)] hover:shadow-2xl active:translate-y-0.5 transition-all duration-200 hover:bg-[var(--landing-accent)] hover:text-[var(--landing-cta-hover-text-secondary)]"
+          className="gap-3 px-12 py-5 rounded-lg shadow-lg bg-[var(--background)] text-[var(--card-blue)] font-semibold ring-2 ring-[var(--card-cyan)] hover:shadow-2xl active:translate-y-0.5 transition-all duration-200 hover:bg-[var(--landing-accent)] hover:text-[var(--landing-cta-hover-text-secondary)]"
+          aria-label="Launch Your Course"
         >
           <span className="w-5 h-5 rounded-full bg-[var(--card-cyan)]/20 flex items-center justify-center">
             <Sparkles className="w-4 h-4 text-[var(--card-blue)]" />
           </span>
           <span>Launch Your Course</span>
           <ArrowRight className="w-4 h-4 text-[var(--card-blue)]" />
-        </button>
+        </Button>
 
-        <button
+        <Button
           type="button"
-          className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-lg shadow-sm bg-[var(--color-blur-bg)] backdrop-blur-md text-[var(--background)] border border-[var(--color-blur-border)] font-medium transition-all duration-200 hover:bg-[var(--landing-cta-hover-deep)] hover:text-[var(--landing-cta-hover-text-secondary)]"
+          className="gap-3 px-12 py-5 rounded-lg shadow-sm bg-[var(--color-blur-bg)] backdrop-blur-md text-[var(--background)] border border-[var(--color-blur-border)] font-medium transition-all duration-200 hover:bg-[var(--landing-cta-hover-deep)] hover:text-[var(--landing-cta-hover-text-secondary)]"
+          aria-label="Explore Courses"
         >
           <span className="w-5 h-5 rounded-full bg-[var(--card-blue)]/10 flex items-center justify-center text-current">
             <svg
@@ -75,7 +78,7 @@ export default function LandingHero() {
             </svg>
           </span>
           Explore Courses
-        </button>
+        </Button>
       </div>
 
       {/* Decorative dots (non-interactive) */}
